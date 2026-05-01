@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="BKP Homes - Premium Customized Furniture in Hyderabad. Discover exquisite sofas, beds, and dining sets crafted with unparalleled quality." />
+  <title>BKP Homes | Premium Furniture Showroom</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="./index.html" class="logo">BKP <span>Homes</span></a>
+      <button class="hamburger" id="hamburger">☰</button>
+      <div class="nav-links">
+        <a href="./index.html">Home</a>
+        <a href="./products.html">Products</a>
+        <a href="./about.html">About</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero"
+    style="position:relative; height: 100vh; display:flex; align-items:center; background: url('./images/hero_bg.png') center/cover no-repeat; overflow:hidden;">
+    <div
+      style="position:absolute; top:0; left:0; width:100%; height:100%; background: linear-gradient(to right, rgba(18,18,18,0.9) 0%, rgba(18,18,18,0.3) 100%); z-index:1;">
+    </div>
+    <div class="container" style="position:relative; z-index:2; max-width: 800px; margin-left:var(--space-2xl);">
+      <h1 class="fade-up" style="font-size: 4.5rem; line-height: 1.1; margin-bottom: var(--space-md);">Curated Elegance
+        <br />For Your Home.</h1>
+      <p class="fade-up"
+        style="font-size: 1.1rem; color: var(--text-secondary); margin-bottom: var(--space-lg); max-width: 500px; transition-delay: 0.2s;">
+        Custom-made premium furniture designed and crafted in Telangana. Experience unparalleled comfort and design at
+        our HITEC City showroom.
+      </p>
+      <div class="fade-up" style="transition-delay: 0.4s;">
+        <a href="./products.html" class="btn btn-primary" style="margin-right: 1rem;">Explore Collection</a>
+        <a href="https://maps.google.com/?q=Venkat+Enclave,+Whitefields,+HITEC+City,+Kondapur,+Hyderabad,+Telangana+500084" target="_blank" class="btn">Visit Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories / Featured -->
+  <section style="padding: var(--space-2xl) 0;">
+    <div class="container">
+      <div class="fade-up" style="text-align:center; margin-bottom: var(--space-xl);">
+        <h2 style="font-size: 2.5rem; margin-bottom: 0.5rem;">The BKP Collection</h2>
+        <p style="color:var(--text-secondary);">Bespoke designs tailored to your lifestyle.</p>
+      </div>
+
+      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--space-lg);">
+        <!-- Category 1 -->
+        <a href="./products.html?category=sofas" class="fade-up"
+          style="display:block; position:relative; height: 400px; overflow:hidden; border-radius: 4px; group;">
+          <div
+            style="position:absolute; inset:0; background: url('./images/product_sofa.png') center/cover; transition:transform var(--transition-slow); align-items:center;"
+            onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"></div>
+          <div
+            style="position:absolute; inset:0; background: linear-gradient(to top, rgba(18,18,18,0.8), transparent); display:flex; align-items:flex-end; padding:var(--space-lg);">
+            <h3 style="font-size:1.5rem; font-family:var(--font-sans); text-transform:uppercase; letter-spacing:0.1em;">
+              Luxury Sofas</h3>
+          </div>
+        </a>
+
+        <!-- Category 2 -->
+        <a href="./products.html?category=dining" class="fade-up"
+          style="transition-delay: 0.1s; display:block; position:relative; height: 400px; overflow:hidden; border-radius: 4px; group;">
+          <div
+            style="position:absolute; inset:0; background: url('./images/dining_set.png') center/cover; transition:transform var(--transition-slow); align-items:center;"
+            onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"></div>
+          <div
+            style="position:absolute; inset:0; background: linear-gradient(to top, rgba(18,18,18,0.8), transparent); display:flex; align-items:flex-end; padding:var(--space-lg);">
+            <h3 style="font-size:1.5rem; font-family:var(--font-sans); text-transform:uppercase; letter-spacing:0.1em;">
+              Dining Sets</h3>
+          </div>
+        </a>
+
+        <!-- Category 3 -->
+        <a href="./products.html?category=bedroom" class="fade-up"
+          style="transition-delay: 0.2s; display:block; position:relative; height: 400px; overflow:hidden; border-radius: 4px; group;">
+          <div
+            style="position:absolute; inset:0; background: url('./images/bedroom_set.png') center/cover; transition:transform var(--transition-slow); align-items:center;"
+            onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"></div>
+          <div
+            style="position:absolute; inset:0; background: linear-gradient(to top, rgba(18,18,18,0.8), transparent); display:flex; align-items:flex-end; padding:var(--space-lg);">
+            <h3 style="font-size:1.5rem; font-family:var(--font-sans); text-transform:uppercase; letter-spacing:0.1em;">
+              Bedroom</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section style="background-color: var(--bg-secondary); padding: var(--space-2xl) 0;">
+    <div class="container"
+      style="display:grid; grid-template-columns: 1fr 1fr; gap: var(--space-xl); align-items:center;">
+      <div class="fade-up">
+        <h2 style="font-size: 3rem; margin-bottom: var(--space-md); color:var(--accent-color);">Mastery in Every Thread.
+        </h2>
+        <p style="color:var(--text-secondary); margin-bottom: var(--space-md);">At BKP Homes, we do not just sell
+          furniture; we create experiences. Based in the heart of HITEC City, our showroom offers a glimpse into a world
+          of tailored luxury.</p>
+        <ul style="color:var(--text-secondary); margin-bottom: var(--space-lg);">
+          <li style="margin-bottom: 0.5rem;">✓ 100% Customization</li>
+          <li style="margin-bottom: 0.5rem;">✓ Premium European Fabrics</li>
+          <li style="margin-bottom: 0.5rem;">✓ Expert Craftsmanship</li>
+        </ul>
+        <a href="./about.html" class="btn">Discover Our Story</a>
+      </div>
+      <div class="fade-up"
+        style="background-color: var(--bg-color); padding:var(--space-xl); border-left: 2px solid var(--accent-color);">
+        <p
+          style="font-style: italic; font-size: 1.25rem; font-family: var(--font-serif); margin-bottom: var(--space-md);">
+          "The customized sofa we got from BKP Homes completely transformed our living space. Absolute perfection."</p>
+        <p style="font-size: 0.875rem; color:var(--accent-color); text-transform: uppercase;">— Ramesh K., Hyderabad</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="fade-up">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col" style="padding-right: 1rem;">
+          <h4 style="font-family:var(--font-serif); font-size: 1.5rem; color:var(--text-primary);">BKP <span
+              style="color:var(--accent-color);">Homes</span></h4>
+          <p style="margin-bottom: 1rem;">Premium Furniture Showroom</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed to Newsletter!');">
+            <input type="email" placeholder="Email Address" required>
+            <button type="submit">→</button>
+          </form>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./products.html">Products</a></li>
+            <li><a href="./about.html">About Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Location</h4>
+          <p>Venkat Enclave, Whitefields<br>HITEC City, Kondapur<br>Hyderabad, Telangana 500084</p>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p>+91 98765 43210</p>
+          <p>info@bkphomes.in</p>
+          <div style="margin-top:1rem;">
+            <a href="#" style="margin-right:1rem; border-bottom: 1px solid var(--accent-color);">Instagram</a>
+            <a href="#" style="border-bottom: 1px solid var(--accent-color);">Facebook</a>
+          </div>
+          <div style="margin-top:1rem;">
+              <a href="https://maps.google.com/?q=Venkat+Enclave,+Whitefields,+HITEC+City,+Kondapur,+Hyderabad,+Telangana+500084" target="_blank" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.75rem;">Get Directions</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 BKP Homes Furniture. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <div class="fab-container fade-up visible">
+    <a href="./contact.html" class="fab-btn" title="Contact Us">💬</a>
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Discover our premium collection of custom furniture at BKP Homes." />
+    <title>Products | BKP Homes</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav class="navbar scrolled" style="background-color: var(--bg-color); border-bottom: 1px solid var(--border-color);">
+      <div class="container nav-container">
+        <a href="./index.html" class="logo">BKP <span>Homes</span></a>
+        <button class="hamburger" id="hamburger">☰</button>
+      <div class="nav-links">
+          <a href="./index.html">Home</a>
+          <a href="./products.html" style="color:var(--accent-color);">Products</a>
+          <a href="./about.html">About</a>
+          <a href="./contact.html">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <main style="padding: 120px 0 var(--space-2xl);">
+      <div class="container">
+        <div class="fade-up" style="text-align:center; margin-bottom: var(--space-xl);">
+          <h1 style="font-size: 3rem; margin-bottom: 1rem;">The Collection</h1>
+          <p style="color:var(--text-secondary); max-width: 600px; margin: 0 auto;">Explore our curated selection of premium, handcrafted furniture.</p>
+        </div>
+
+        <!-- Filters -->
+        <div class="fade-up" style="display:flex; justify-content:center; gap: 1rem; margin-bottom: var(--space-xl); flex-wrap:wrap;" id="filter-buttons">
+          <button class="btn btn-primary" data-filter="all">All</button>
+          <button class="btn" data-filter="sofas">Sofas</button>
+          <button class="btn" data-filter="dining">Dining</button>
+          <button class="btn" data-filter="bedroom">Bedroom</button>
+        </div>
+
+        <!-- Dynamic Product Grid -->
+        <div id="product-grid" style="display:grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: var(--space-lg);">
+          <!-- Placeholders loaded until JS injects content -->
+          <div style="height: 400px; background: var(--bg-secondary); border-radius: 4px; border: 1px solid var(--border-color); animation: pulse 1.5s infinite;"></div>
+          <div style="height: 400px; background: var(--bg-secondary); border-radius: 4px; border: 1px solid var(--border-color); animation: pulse 1.5s infinite; animation-delay: 0.1s;"></div>
+          <div style="height: 400px; background: var(--bg-secondary); border-radius: 4px; border: 1px solid var(--border-color); animation: pulse 1.5s infinite; animation-delay: 0.2s;"></div>
+          <div style="height: 400px; background: var(--bg-secondary); border-radius: 4px; border: 1px solid var(--border-color); animation: pulse 1.5s infinite; animation-delay: 0.3s;"></div>
+          <style>@keyframes pulse { 0% {opacity: 0.5;} 50% {opacity: 0.9;} 100% {opacity: 0.5;} }</style>
+        </div>
+      </div>
+    </main>
+
+  <footer class="fade-up">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col" style="padding-right: 1rem;">
+          <h4 style="font-family:var(--font-serif); font-size: 1.5rem; color:var(--text-primary);">BKP <span
+              style="color:var(--accent-color);">Homes</span></h4>
+          <p style="margin-bottom: 1rem;">Premium Furniture Showroom</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed to Newsletter!');">
+            <input type="email" placeholder="Email Address" required>
+            <button type="submit">→</button>
+          </form>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./products.html">Products</a></li>
+            <li><a href="./about.html">About Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Location</h4>
+          <p>Venkat Enclave, Whitefields<br>HITEC City, Kondapur<br>Hyderabad, Telangana 500084</p>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p>+91 98765 43210</p>
+          <p>info@bkphomes.in</p>
+          <div style="margin-top:1rem;">
+            <a href="#" style="margin-right:1rem; border-bottom: 1px solid var(--accent-color);">Instagram</a>
+            <a href="#" style="border-bottom: 1px solid var(--accent-color);">Facebook</a>
+          </div>
+          <div style="margin-top:1rem;">
+              <a href="https://maps.google.com/?q=Venkat+Enclave,+Whitefields,+HITEC+City,+Kondapur,+Hyderabad,+Telangana+500084" target="_blank" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.75rem;">Get Directions</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 BKP Homes Furniture. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <div class="fab-container fade-up visible">
+    <a href="./contact.html" class="fab-btn" title="Contact Us">💬</a>
+  </div>
+  <script src="./main.js"></script>
+  <script src="./products.js"></script>
+</body>
+</html>
